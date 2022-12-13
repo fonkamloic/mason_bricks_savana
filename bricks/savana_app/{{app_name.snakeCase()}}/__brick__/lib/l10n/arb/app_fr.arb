@@ -1,0 +1,7 @@
+{
+    "@@locale": "fr",
+    "savanaAppBarTitle": "Brick de Savana Inc",
+    "@savanaAppBarTitle": {
+        "description": "Texte affiché dans l'AppBar de la page par défaut de Savana Brick"
+    }
+}
