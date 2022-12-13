@@ -26,3 +26,12 @@ mason get
 `mason make savana_plugin plugin_name`
 
 
+## To avoid vscode analysis from considering bricks as error add the following to your settings.json file
+```JSON
+{
+    “dart.analysisExcludedFolders”: [“bricks”],
+    ...
+}
+```
+
+
