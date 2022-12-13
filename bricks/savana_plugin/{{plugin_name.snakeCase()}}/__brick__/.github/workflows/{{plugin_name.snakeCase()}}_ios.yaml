@@ -1,0 +1,26 @@
+name: {{plugin_name.snakeCase()}}_ios
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/{{plugin_name.snakeCase()}}_ios.yaml"
+      - "{{plugin_name.snakeCase()}}_ios/**"
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/{{plugin_name.snakeCase()}}_ios.yaml"
+      - "{{plugin_name.snakeCase()}}_ios/**"
+
+jobs:
+  build:
+    uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/flutter_package.yml@v1
+    with:
+      flutter_channel: stable
+      flutter_version: 3.3.2
+      working_directory: {{plugin_name.snakeCase()}}_ios
+

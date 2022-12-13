@@ -1,0 +1,41 @@
+name: savana_plugin
+description: A custom savana plugin
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+  flutter: ">=3.3.2"
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        default_package: savana_plugin_android
+      ios:
+        default_package: savana_plugin_ios
+      macos:
+        default_package: savana_plugin_macos
+      web:
+        default_package: savana_plugin_web
+
+dependencies:
+  flutter:
+    sdk: flutter
+  savana_plugin_android:
+    path: ../savana_plugin_android
+  savana_plugin_ios:
+    path: ../savana_plugin_ios
+  savana_plugin_macos:
+    path: ../savana_plugin_macos
+  savana_plugin_platform_interface:
+    path: ../savana_plugin_platform_interface
+  savana_plugin_web:
+    path: ../savana_plugin_web
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^0.3.0
+  plugin_platform_interface: ^2.0.0
+  very_good_analysis: ^3.1.0

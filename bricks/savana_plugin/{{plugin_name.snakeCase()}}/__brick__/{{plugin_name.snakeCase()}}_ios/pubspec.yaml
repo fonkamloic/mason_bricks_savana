@@ -1,0 +1,28 @@
+name: {{plugin_name.snakeCase()}}_ios
+description: iOS implementation of the {{plugin_name.snakeCase()}} plugin
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+  flutter: ">=3.3.2"
+
+flutter:
+  plugin:
+    implements: {{plugin_name.snakeCase()}}
+    platforms:
+      ios:
+        pluginClass: SavanaPluginPlugin
+        dartPluginClass: SavanaPluginIOS
+
+dependencies:
+  flutter:
+    sdk: flutter
+  {{plugin_name.snakeCase()}}_platform_interface:
+    path: ../{{plugin_name.snakeCase()}}_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  plugin_platform_interface: ^2.0.0
+  flutter_lints: 
