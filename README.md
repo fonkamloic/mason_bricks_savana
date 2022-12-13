@@ -12,8 +12,14 @@ Mason CLI allows developers to create and consume reusable templates called bric
 
 #  Use your sample bricks provided
 ```git clone https://github.com/fonkamloic/mason_bricks_savana.git
-cd mason_bricks_savana/savana_bricks
-mason get
+    cd mason_bricks_savana/savana_bricks
+    mason get
+
+    or 
+
+    mason add --path bricks/savana_app savana_app
+    mason add --path bricks/savana_plugin savana_plugin
+    mason add --path bricks/feature_brick feature_brick
  ```
 
 # list all locally installed bricks
