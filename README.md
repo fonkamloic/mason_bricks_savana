@@ -26,10 +26,10 @@ Mason CLI allows developers to create and consume reusable templates called bric
 `mason list`
 
 # To create sample app from savana_app brick 
-`mason make savana_app app_name`
+`mason make savana_app`
 
 # To create custom pluging from savana_plugin brick
-`mason make savana_plugin plugin_name`
+`mason make savana_plugin`
 
 
 ## To avoid vscode analysis from considering bricks as error add the following to your settings.json file
