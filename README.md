@@ -12,7 +12,7 @@ Mason CLI allows developers to create and consume reusable templates called bric
 
 #  Use your sample bricks provided
 ```git clone https://github.com/fonkamloic/mason_bricks_savana.git
-    cd mason_bricks_savana/savana_bricks
+    cd mason_bricks_savana/
     mason get
 
     or 
